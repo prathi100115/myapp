@@ -1,0 +1,111 @@
+{
+  "name": "employee",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    
+"employee_id": {
+      "type": "number",                     
+      "required": true,
+      "mysql":
+    {
+        "columnName":"employee_id",
+        "dataType":"INT",
+        "dataLength":20,
+        "nullable":"N"
+    }
+},
+"employee_name": {
+      "type": "string",                     
+      "required": true,
+      "mysql":
+    {
+        "columnName":"employee_name",
+        "dataType":"VARCHAR2",
+        "dataLength":20,
+        "nullable":"N"
+    }
+
+    },
+
+"brand": {
+      "type": "string",
+      "required": true,
+
+      "mysql":
+    {
+        "columnName":"brand",
+        "dataType":"VARCHAR2",
+        "dataLength":20,
+        "nullable":"N"
+    }  
+  },
+"serial_no": {
+      "type": "string",
+      "required": true,
+"mysql":
+    {
+        "columnName":"serial_no",
+        "dataType":"VARCHAR2",
+        "dataLength":20,
+        "nullable":"N"
+    }  
+
+  },
+"created_at": {
+      "type": "Date",
+      
+"mysql":
+    {
+        "columnName":"created_at",
+        "dataType":"Date",
+        "dataLength":20,
+        "nullable":"N"
+    }
+
+
+    },
+"created_by": {
+      "type": "string",
+      
+
+"mysql":
+    {
+        "columnName":"created_by",
+        "dataType":"VARCHAR2",
+        "dataLength":20,
+        "nullable":"N"
+    }     
+                },
+"modified_at": {
+      "type": "Date",
+      "required": true,
+
+"mysql":
+
+    {
+        "columnName":"modified_at",
+        "dataType":"Date",
+        "dataLength":20,
+        "nullable":"N"
+    }   
+                 },
+"modified_by": {
+      "type": "string",
+    
+
+"mysql":
+    {
+        "columnName":"modified_by",
+        "dataType":"VARCHAR",
+        "dataLength":20,
+        "nullable":"N"
+    }  }  
+        },
+
+
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
